@@ -1,0 +1,10 @@
+displayName: HTTP log
+summary: Logs HTTP requests and/or responses
+type: middleware
+import: github.com/trois-six/plugin-httplog
+compatibility: TODO
+testData:
+  request: true
+  reuquestBody: false
+  response: true
+  responseBody: false

@@ -1,0 +1,4 @@
+# github.com/kjk/betterguid v0.0.0-20170621091430-c442874ba63a
+## explicit
+github.com/kjk/betterguid
+## explicit
