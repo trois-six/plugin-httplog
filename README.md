@@ -1,6 +1,6 @@
 # HTTP Log
 
-This [Traefik](https://github.com/containous/traefik) plugin is as middleware which logs HTTP requests, HTTP requests bodies, HTTP responses, HTTP responses bodies.
+This [Traefik](https://github.com/traefik/traefik) plugin is as middleware which logs HTTP requests, HTTP requests bodies, HTTP responses, HTTP responses bodies.
 
 **BE WARNED: THIS PLUGIN SHOULD NOT BE USED IN PRODUCTION! And logging bodies when they contain binaries will crash your instance! or create weird logs! It doesn't uncompress service responses.**
 
@@ -18,7 +18,7 @@ services:
       --entrypoints.web.address=:80
       --providers.docker=true
       --providers.docker.exposedbydefault=false
-      --experimental.pilot.token=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
+      --pilot.token=xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
       --experimental.devplugin.gopath=/home/me/src/softwares/go
       --experimental.devplugin.modulename=github.com/trois-six/plugin-httplog
     ports:
